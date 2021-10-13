@@ -1,0 +1,28 @@
+@font-face {
+  font-family: 'Karbon-Regular';
+  src: url('./assets/karbon-regular-webfont.woff') format('woff'),
+    url('./assets/karbon-regular-webfont.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Karbon-Semibold';
+  src: url('./assets/karbon-regular-webfont.woff') format('woff'),
+    url('./assets/karbon-regular-webfont.ttf') format('truetype');
+}
+
+body {
+  margin: 0;
+  font-family: 'Karbon-Regular', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-wrap: wrap;
+}
+
+@import 'styles/layout.scss';

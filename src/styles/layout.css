@@ -1,0 +1,63 @@
+.label-color {
+  color: #003479 !important;
+}
+
+.label-color {
+  color: #003479 !important;
+}
+
+.card {
+  background-color: #f4f4f4;
+  height: 523px;
+  width: 330px;
+}
+
+.card .container {
+  margin: 25px;
+  height: 498px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.card .container .card-title {
+  font-size: 36px;
+  color: #003479;
+  margin: 0;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.MuiFormLabel-root {
+  font-family: inherit !important;
+  font-size: 20px !important;
+  color: #003479 !important;
+}
+
+.search-icon-props {
+  height: 50px !important;
+  min-width: 50px;
+  max-height: 50px !important;
+  background-color: #644c79;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.text-input {
+  border: solid 1px #644c79;
+}
+
+.MuiInputBase-root {
+  border-bottom: none;
+}
+/*# sourceMappingURL=layout.css.map */

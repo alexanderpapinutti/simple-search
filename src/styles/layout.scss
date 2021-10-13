@@ -1,0 +1,222 @@
+@import './variables.scss';
+
+$large-screens: 1250px;
+$medium-screens: 944px;
+$small-screens: 550px;
+
+.label-color {
+  color: $dark-blue !important;
+}
+
+.input-background {
+  background-color: white;
+}
+
+.card {
+  background-color: $card-color;
+  margin: 25px;
+
+  &.filter {
+    height: 523px;
+    width: 330px;
+    .container {
+      margin: 25px;
+      height: 470px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      .card-title {
+        font-size: $card-title;
+        color: $dark-blue;
+        -webkit-text-stroke: thin;
+        margin: 0;
+      }
+
+      .user-select {
+        background: white;
+        border-radius: 0;
+      }
+
+      .reset-filters {
+        font-size: 20;
+      }
+
+      .reset-filters:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  &.table {
+    width: 800px;
+  }
+
+  @media only screen and (max-width: $large-screens) {
+    &.table {
+      width: 500px;
+    }
+  }
+  .todos-table {
+    height: 630px;
+    min-width: 320px;
+    margin: 25px;
+
+    .header {
+      border-bottom: #c2c2c2 1px solid;
+
+      div {
+        color: $dark-blue;
+        font-size: $label-size;
+
+        @media only screen and (max-width: $large-screens) {
+          &.completed-column {
+            margin-left: -20px;
+          }
+        }
+
+        @media only screen and (max-width: $small-screens) {
+          &.completed-column {
+            margin-left: -40px;
+          }
+        }
+      }
+    }
+
+    .table-body {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 78%;
+      margin-top: 20px;
+
+      .row {
+        display: flex;
+        height: 70px;
+        background-color: white;
+        border-bottom: 2px solid $light-blue;
+
+        .completed-icon {
+          color: $light-blue;
+        }
+
+        @media only screen and (max-width: $small-screens) {
+          .completed-icon {
+            margin-right: 30px;
+          }
+        }
+        p {
+          font-size: 18px;
+        }
+      }
+    }
+    .table-footer {
+      height: 17.5%;
+    }
+
+    .col-1 {
+      width: 25%;
+    }
+    .col-2 {
+      width: 58%;
+    }
+
+    .col-3 {
+      width: 14%;
+    }
+  }
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.text-align-left {
+  text-align: left;
+}
+
+.text-align-right {
+  text-align: right;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.margin-bottom {
+  margin-bottom: 10px;
+}
+
+.MuiFormLabel-root {
+  font-family: 'Karbon-Semibold', sans-serif !important;
+  font-size: $label-size !important;
+  color: $dark-blue !important;
+}
+
+.table-header-font {
+  font-family: 'Karbon-Semibold' !important;
+}
+
+.search-icon-props {
+  height: 49px !important;
+  min-width: 50px;
+  max-height: 49px !important;
+  background-color: #644c79;
+  justify-content: center;
+}
+
+.search-icon-props:hover {
+  cursor: pointer;
+}
+
+.text-input {
+  border: solid 1px $purple;
+}
+
+.MuiInputBase-root {
+  border-bottom: none;
+}
+
+.MuiPagination-ul {
+  li {
+    button {
+      color: $dark-blue;
+    }
+  }
+  li:nth-child(6) {
+    visibility: hidden;
+    position: absolute;
+  }
+  li:last-child,
+  li:first-child {
+    button {
+      height: 25px;
+      width: 25px;
+      min-width: 25px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid $light-blue;
+      border-radius: 50%;
+      color: $light-blue;
+
+      &.MuiButtonBase-root {
+        &.Mui-disabled {
+          color: gray;
+          border: 1px solid gray;
+        }
+      }
+    }
+  }
+}

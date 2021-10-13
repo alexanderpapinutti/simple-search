@@ -2,14 +2,26 @@
   "name": "simple-search",
   "version": "0.1.0",
   "private": true,
+  "files": [
+    "build"
+  ],
   "dependencies": {
-    "@testing-library/jest-dom": "^5.14.1",
-    "@testing-library/react": "^11.2.7",
-    "@testing-library/user-event": "^12.8.3",
+    "@emotion/react": "^11.4.1",
+    "@emotion/styled": "^11.3.0",
+    "@mui/icons-material": "^5.0.3",
+    "@mui/material": "^5.0.3",
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.175",
+    "@types/prettier": "^2.4.1",
+    "@types/react": "^17.0.28",
+    "@types/react-dom": "^17.0.9",
+    "node-sass": "^6.0.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
-    "web-vitals": "^1.1.2"
+    "typescript": "^4.4.3"
   },
   "scripts": {
     "start": "react-scripts start",
