@@ -37,7 +37,6 @@ function App() {
           <FilterCard
             tableQuery={query}
             setTableQuery={setQuery}
-            userIds={_.get(data, 'userIds')}
             setPage={setPage}
           />
           <TodosTable

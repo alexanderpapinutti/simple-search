@@ -1,6 +1,6 @@
 import * as _ from 'lodash';
 
-export async function makeRequest(query) {
+export async function makeRequest(query: any) {
   let queryString = 'https://jsonplaceholder.typicode.com/todos/';
   let isAllData = true;
   if (!_.isEmpty(query)) {
@@ -14,15 +14,16 @@ export async function makeRequest(query) {
 
   const data = await fetch(queryString);
   const response = await data.json();
+
   if (isAllData) {
     const userIds = _.uniq(_.map(response, 'userId'));
-    localStorage.setItem('userIds', userIds);
+    localStorage.setItem('userIds', userIds.toString());
   }
 
   return response;
 }
 
-export function formatData(data = [], setData, page) {
+export function formatData(data: any, setData: Function, page: number) {
   const dataChunks = _.chunk(data, 5);
   const count = _.size(dataChunks);
   const dataToShow = dataChunks[page - 1];
